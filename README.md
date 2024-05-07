@@ -1,4 +1,6 @@
 # Overview
+***The full writeup can be found in the Writeup directory***
+
 In this section of my Azure Administration project I want to showcase and detail the setup and deployment of various Azure networking services including Virtual Networks, Subnets, VMs, Azure Bastion, Recovery Services Vault, and Virtual Network Gateways. I want to get hands on experience with the skills learned and demonstrated in the [AZ-104 Azure Administration certification](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification). This section will  focus on the "Implement and manage virtual networking" section of the exam. 
 ## Summary
 In this section I deployed 2 virtual networks. Vnet1 contains a *WebSubnet*, *DbSubnet*, and *AdminSubnet*. The *WebSubnet* contains a VM running an Nginx webserver. The *DbSubnet* contains and SQL Server VM. The *AdminSubnet* contains a Recovery Services Vault. Vnet2 contains a Load Balancer as well as 3 simple webservers. The virtual networks are peered. The webserver in the 1st Vnet updates it's website with data from the SQL Server VM as well as the 3 VMs behind the Load balancer. 
